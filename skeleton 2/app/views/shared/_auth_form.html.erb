@@ -1,0 +1,10 @@
+<form action="<%= action %>" method="post">
+  <%= render 'shared/errors'%>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label>Username:
+  <input type="text" name="user[user_name]">
+  </label>
+  <label>Password:</label>
+  <input type="password" name="user[password]">
+  <input type="submit">
+</form>
