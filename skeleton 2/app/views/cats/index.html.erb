@@ -2,7 +2,9 @@
 
 <ul>
   <% @cats.each do |cat| %>
-    <li><a href="<%= cat_url(cat) %>"><%= cat.name %></a></li>
+    <li><a href="<%= cat_url(cat) %>"><%= cat.name %></a>
+      <img src="<%= cat.photo %>" height="200px" width="200px"/>
+    </li>
   <% end %>
 </ul>
 

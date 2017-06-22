@@ -17,6 +17,7 @@ class Cat < ActiveRecord::Base
     :name,
     :sex,
     :user_id,
+    :photo,
     presence: true
   )
 

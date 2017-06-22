@@ -1,7 +1,7 @@
 <h1><%= @cat.name %></h1>
 
-<img src="https://s-media-cache-ak0.pinimg.com/736x/52/fd/5a/52fd5a15b32abad7bd304236ca6dbd38.jpg">
-
+<img src="<%= @cat.photo %>"/>
+<br>
 <table>
   <tr>
     <th>Attribute</th>
@@ -30,4 +30,5 @@
 </table>
 <% if current_user %>
   <%= button_to "Make New Request", new_cat_rental_request_url, method: :get%>
+
 <% end %>

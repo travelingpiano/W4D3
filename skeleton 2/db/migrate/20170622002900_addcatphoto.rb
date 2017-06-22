@@ -1,5 +1,5 @@
 class Addcatphoto < ActiveRecord::Migration
   def change
-    add_column :cats, :photo, :text, null: false
+    add_column :cats, :photo, :text
   end
 end
