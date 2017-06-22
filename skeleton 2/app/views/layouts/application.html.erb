@@ -8,6 +8,7 @@
 
 </head>
 <body>
+  <%= button_to "Homepage", cats_url, method: :get%>
   <% if logged_in? %>
     Welcome <%= current_user.user_name %>!
     <br>
